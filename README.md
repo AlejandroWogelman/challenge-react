@@ -1,3 +1,7 @@
+Aplicación hecha para un challenge. Uso de Rutas (react-router-dom), filtros y peticiones (Api). Intente de uso de metodologías BEM jaja.
+
+Los pasos para abrir la aplicacíon se encuentran abajo.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

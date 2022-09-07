@@ -1,6 +1,6 @@
-import "./App.css";
-import { useFetch } from "./hooks/useFetch";
 import { AppRouter } from "./router/AppRouter";
+
+import "./App.css";
 
 function App() {
   return (
