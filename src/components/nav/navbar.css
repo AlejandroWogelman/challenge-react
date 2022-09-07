@@ -1,0 +1,154 @@
+header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #cccccc;
+}
+.nav {
+  width: 100%;
+  height: 100%;
+  text-align: end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background-color: #12110f;
+  color: white;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: default;
+}
+.nav__links {
+  display: flex;
+}
+
+.nav__links a {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 1.4rem;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  width: max-content;
+  color: black;
+}
+
+.nav__links--active {
+  color: #eb0a1e;
+}
+.nav__links--active::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #d0021b;
+  bottom: -26px;
+  width: 100%;
+  left: 0;
+}
+
+.nav__ul-container {
+  position: absolute;
+  right: 0px;
+  top: 70px;
+  width: max-content;
+  max-width: 390px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.5;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: all 0.2s;
+  border: 1px solid rgba(43, 43, 43, 0.17);
+  border-top: none;
+  z-index: 2;
+}
+
+.ul_show {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  opacity: 1;
+}
+
+.nav__btn-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav__button {
+  border: none;
+  padding: 0.5rem;
+  margin-left: 8px;
+  text-align: center;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav__button img {
+  width: 20px;
+}
+.nav__button:hover {
+  background-color: rgb(237, 237, 237);
+}
+
+.nav__ul {
+  list-style: none;
+  padding: 1rem 0;
+  background-color: #ffffff;
+  font-size: 20px;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.text-none {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav__ul li {
+  padding: 0.5rem 1rem;
+}
+.nav__ul li:hover {
+  background-color: #d1d1d1;
+  cursor: default;
+}
+
+.nav__ul--line {
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.nav__ul--dark {
+  background-color: #efeeef;
+}
+
+@media screen and (max-width: 1100px) {
+  .nav__ul {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav__ul {
+    font-size: 16px;
+    padding: 0.5rem 0;
+  }
+}
+@media screen and (max-width: 455px) {
+  .nav__links {
+    visibility: hidden;
+  }
+}

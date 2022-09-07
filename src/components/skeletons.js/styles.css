@@ -1,0 +1,34 @@
+.m-auto {
+  margin: auto;
+  margin-top: 0 !important;
+}
+
+.skeleton-filters {
+  display: block;
+  width: 100%;
+}
+
+/* -------------- */
+.skeleton-details {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.skeleton-details span {
+  width: 48%;
+  height: 80%;
+  display: block;
+}
+.skeleton-details span span {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .skeleton-details span {
+    width: 90%;
+  }
+}

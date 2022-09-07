@@ -1,0 +1,50 @@
+.select-container {
+  position: relative;
+  min-width: 160px;
+}
+
+.select-container__title {
+  font-size: 14px;
+  padding: 10px;
+  transition: 0.3s background-color;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.select-container__title:hover {
+  background-color: rgba(139, 139, 139, 0.229);
+}
+
+.select-container__ul {
+  width: 100%;
+  position: absolute;
+  list-style: none;
+  background-color: white;
+  box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+
+  visibility: hidden;
+}
+
+.select-container__ul--visible {
+  visibility: visible;
+}
+
+.select-container__ul li {
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+
+  transition: background-color 0.3s;
+}
+
+.select-container li:hover {
+  background-color: rgba(139, 139, 139, 0.229);
+}
+
+.select-container__active {
+  background-color: rgba(199, 199, 199, 0.684);
+}
+
+.select-container__ul span {
+  font-weight: bold;
+}
