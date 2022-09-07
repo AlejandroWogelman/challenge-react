@@ -20,7 +20,9 @@ export const Filter = ({ handleSetFilter }) => {
     const election = e.target.textContent;
     activeElection();
     e.target.classList.add("filter-container__btn-active");
-    handleSetFilter("filter-container", election);
+
+    handleSetFilter("filter", election);
+
     filter_ul_Ref.current.classList.remove("filter-container__options-visible");
   };
 
